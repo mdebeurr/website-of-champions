@@ -78,7 +78,6 @@
             text-align: center;
         }
 
-        .timeline {}
 
         .timeline-item {
             height: 50vh;
@@ -88,7 +87,7 @@
 
         .timeline-svg {
             /* left: 1; */
-            margin-left: 15rem;
+            margin-left: -5rem;
             width: 10%;
             flex-shrink: 0;
         }
@@ -142,8 +141,8 @@
             }
 
             exit 100% {
-                opacity: 0;
-                transform: translateY(-10%) scale(0.8);
+                opacity: 1;
+                /* transform: translateY(-10%) scale(0.8); */
             }
         }
 
@@ -153,8 +152,19 @@
             justify-content: flex-start;
             opacity: 0;
             animation: appear;
-            animation-timeline: view(block 40% 40%);
+            animation-timeline: view(block 50% 10%);
             width: 50rem;
+        }
+
+        .timeline-photos {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            opacity: 0;
+            animation: appear;
+            animation-timeline: view(block 50% 20%);
+            margin-left: 1rem;
+            width: 20rem;
         }
 
         .timeline-item-date {
@@ -237,9 +247,13 @@
     </div>
     <div class="timeline">
         <div class="timeline-item">
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> This is a placeholder
+                </p>
+            </div>
             <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
                 stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="50%" y1="0" x2="50%" y2="100%" />
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
             <div class="timeline-content">
@@ -269,14 +283,18 @@
             </div>
         </div>
         <div class="timeline-item">
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> This is a placeholder
+                </p>
+            </div>
             <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
                 stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="50%" y1="0" x2="50%" y2="100%" />
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
             <div class="timeline-content">
                 <p class="timeline-item-date">June 2020 - December 2023</p>
-                <p class="timeline-item-title">Doctorate of Philosophy (Ph.D.), Mechanics</p>
+                <p class="timeline-item-title">Doctorate of Philosophy, Mechanics</p>
                 <p class="timeline-item-location">Ecole Nationale Supérieure d’Arts et Métiers, LISPEN Laboratory,
                     Lille, France</p>
                 <p class="timeline-item-description"> Before moving to Paris, I spent 3.5 years in Lille working on my
@@ -311,14 +329,18 @@
             </div>
         </div>
         <div class="timeline-item">
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> This is a placeholder
+                </p>
+            </div>
             <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
                 stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="50%" y1="0" x2="50%" y2="100%" />
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
             <div class="timeline-content">
                 <p class="timeline-item-date">August 2019 - May 2020</p>
-                <p class="timeline-item-title">Master of Science (M.S.), Mechanical Engineering</p>
+                <p class="timeline-item-title">Master of Science, Mechanical Engineering</p>
                 <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
                 <p class="timeline-item-description">
                     I moved to France in May 2020 (and what a trek it was (link to covid article)). But before the PhD
@@ -338,9 +360,40 @@
             </div>
         </div>
         <div class="timeline-item">
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> This is a placeholder
+                </p>
+            </div>
             <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
                 stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="50%" y1="0" x2="50%" y2="100%" />
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
+                <circle cx="50%" cy="50%" r="0rem" fill="#000" />
+            </svg>
+            <div class="timeline-content">
+                <p class="timeline-item-date">August 2015 - December 2023</p>
+                <p class="timeline-item-title">Title</p>
+                <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
+                <ul class="timeline-item-description">
+                    <li> Research and implementation of state of the art
+                        strategies in generative artificial intelligence
+                        (AI) for efficient and innovative analysis in real
+                        time of streams of identity data</li>
+                    <li> Contribution to product innovation and to the
+                        state of the art with a focus on AI, data science
+                        and big data</li>
+                    <li> Keywords: generative artificial intelligence,
+                        large language models (LLMs), data science, big data</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> This is a placeholder
+                </p>
+            </div>
+            <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
+                stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
             <div class="timeline-content">
@@ -361,38 +414,19 @@
             </div>
         </div>
         <div class="timeline-item">
-            <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
-                stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="50%" y1="0" x2="50%" y2="100%" />
-                <circle cx="50%" cy="50%" r="0rem" fill="#000" />
-            </svg>
-            <div class="timeline-content">
-                <p class="timeline-item-date">June 2020 - December 2023</p>
-                <p class="timeline-item-title">Title</p>
-                <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
-                <ul class="timeline-item-description">
-                    <li> Research and implementation of state of the art
-                        strategies in generative artificial intelligence
-                        (AI) for efficient and innovative analysis in real
-                        time of streams of identity data</li>
-                    <li> Contribution to product innovation and to the
-                        state of the art with a focus on AI, data science
-                        and big data</li>
-                    <li> Keywords: generative artificial intelligence,
-                        large language models (LLMs), data science, big data</li>
-                </ul>
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> This is a placeholder
+                </p>
             </div>
-        </div>
-        <div class="timeline-item">
             <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
                 stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="50%" y1="0" x2="50%" y2="100%" />
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
             <div class="timeline-content">
-                <p class="timeline-item-date">June 2020 - December 2023</p>
-                <p class="timeline-item-title">Title</p>
-                <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
+                <p class="timeline-item-date">August 2015 - May 2019</p>
+                <p class="timeline-item-title">Bachelor of Science in Engineering, Mechanical Engineering</p>
+                <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
                 <ul class="timeline-item-description">
                     <li> Research and implementation of state of the art
                         strategies in generative artificial intelligence
