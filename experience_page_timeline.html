@@ -168,8 +168,8 @@
         }
 
         .timeline-item-date {
-            font-family: "Centaur";
-            font-size: 1rem;
+            font-family: "Courier New";
+            font-size: 0.8rem;
             font-weight: 700;
             color: gray;
             /*
@@ -182,8 +182,8 @@
         }
 
         .timeline-item-title {
-            font-family: "Centaur";
-            font-size: 1.2rem;
+            font-family: "Courier New";
+            font-size: 1.1rem;
             font-weight: 700;
             margin-top: 0.2rem;
             margin-bottom: 0.3rem;
@@ -192,15 +192,16 @@
         }
 
         .timeline-item-location {
-            font-family: "Centaur";
+            font-family: "Courier New";
+            font-size: 0.9rem;
             font-weight: 700;
         }
 
         .timeline-item-description {
-            font-family: "Courier New";
-            font-size: 1rem;
+            font-family: "Centaur";
+            font-size: 1.1rem;
             font-weight: 400;
-            line-height: 1.5;
+            line-height: 1.1;
             letter-spacing: 0rem;
             word-spacing: 0rem;
             margin-top: 1rem;
@@ -209,17 +210,34 @@
 
         .timeline-item-keywords {
             font-family: "Courier New";
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             font-weight: 700;
-            width: 35rem;
+            width: 50rem;
             margin-top: 1rem;
         }
 
         .timeline-item-bullets {
             font-size: 0.85rem;
             font-weight: 0;
-            /* line-height: 1.5; */
+            line-height: 1.1;
             /* padding-right: 10%; */
+        }
+
+        .integrated-link {
+            font-family: Centaur;
+            /* font-style: italic; */
+            font-size: 1rem;
+            color: white;
+            text-decoration: None;
+        }
+
+        .integrated-link:hover {
+            color: pink;
+            /* text-decoration: underline; */
+        }
+
+        .emoji {
+            font-size: 0.8rem;
         }
 
         footer {
@@ -300,17 +318,26 @@
                 <p class="timeline-item-description"> Before moving to Paris, I spent 3.5 years in Lille working on my
                     PhD in mechanics, specializing in nonlinear dynamics of flexible structures. I was lucky enough
                     to
-                    have been a part of the Marie Curie program THREAD-ETN, which funded a cornucopia of international
+                    have been a part of the Marie Curie program <a class="emoji">🔗</a> <a class="integrated-link"
+                        href="https://thread-etn.eu/">Thread ETN</a>, which funded a cornucopia
+                    of
+                    international
                     trainings and conferences.</p>
                 <p class="timeline-item-description">
-                    I defended my thesis titled "Nonlinear dynamics of highly flexible slender beams: efficient
-                    numerical strategies
-                    in the frequency domain" and under the direction of Pr. Olivier THOMAS on 13 December 2023. It is
-                    available at (link to theses . fr).
+                    I defended my thesis titled <a class="integrated-link" href="https://theses.fr/2023HESAE096">🔎
+                        Nonlinear
+                        dynamics of highly
+                        flexible slender beams: efficient
+                        numerical strategies
+                        in the frequency domain</a> and under the direction of Pr. Olivier THOMAS on 13 December 2023.
                 </p>
                 <ul class="timeline-item-bullets">
-                    <p> Selected works</p>
-                    <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
+                    <p> Selected works ~</p>
+                    <p> A comprehensive list of published works can be found on my <a class="integrated-link"
+                            href="https://scholar.google.com/citations?user=dn8y5okAAAAJ&hl=en">🔎 Google Scholar</a>
+                        page.
+                    </p>
+                    <!-- <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
                         modes and frequency response of geometrically exact beam structures. Journal of Sound and
                         Vibrations, 548 (117534).</p>
                     <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
@@ -322,10 +349,10 @@
                     <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
                         modes and frequency response of geometrically exact beam structures. Journal of Sound and
                         Vibrations, 548 (117534).</p>
-                    <p> Research topics + papers </p>
+                    <p> Research topics + papers </p> -->
                 </ul>
                 <p class="timeline-item-keywords"> Keywords: nonlinear dynamics, continuum mechanics, mechanical
-                    vibrations, periodic systems, control of dynamical systems, finite element method </p>
+                    vibrations, periodic systems, control of mechanical systems, finite element method </p>
             </div>
         </div>
         <div class="timeline-item">
@@ -344,7 +371,7 @@
                 <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
                 <p class="timeline-item-description">
                     I moved to France in May 2020 (and what a trek it was (link to covid article)). But before the PhD
-                    came the Masters, this time specializing in controls. I completed my Masters as part of the 4+1
+                    came the Master's, this time specializing in controls. I completed my Master's as part of the 4+1
                     program at ASU and capped off my 5 years there with a research project in soft robotics and a
                     graduate TA-ship in control of dynamical systems (100+ lesson hours).
                 </p>
@@ -370,20 +397,22 @@
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
             <div class="timeline-content">
-                <p class="timeline-item-date">August 2015 - December 2023</p>
-                <p class="timeline-item-title">Title</p>
-                <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
-                <ul class="timeline-item-description">
-                    <li> Research and implementation of state of the art
-                        strategies in generative artificial intelligence
-                        (AI) for efficient and innovative analysis in real
-                        time of streams of identity data</li>
-                    <li> Contribution to product innovation and to the
-                        state of the art with a focus on AI, data science
-                        and big data</li>
-                    <li> Keywords: generative artificial intelligence,
-                        large language models (LLMs), data science, big data</li>
-                </ul>
+                <p class="timeline-item-date">December 2019 - May 2020</p>
+                <p class="timeline-item-title">Applied Research Project, Neuromuscular Control and Human Robotics Lab
+                </p>
+                <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
+                <p class="timeline-item-description">
+                    My first research experience was in the field of soft robotics and control systems. I collaborated
+                    with Dr. Carly Thalman, then in her PhD, and Tiffany Hertzell, a Bachelor's student, on a wearable
+                    exosuit soft robot for human gait rehabilitation. In particuler, Carly and I focused on carrying out
+                    the experimental validation of the ankle exosuit.
+                </p>
+                <p class="timeline-item-description">
+                    Although only of short duration, our collaboration was highly successful: we published (#) papers,
+                    took first place in the WearRAcon Innovation competition and applied for a US patent.
+                </p>
+                <p class="timeline-item-keywords"> Keywords: soft robotics, control of robotic systems, robotic design,
+                    biomechanics </p>
             </div>
         </div>
         <div class="timeline-item">
