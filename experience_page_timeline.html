@@ -17,6 +17,7 @@
             font-style: normal;
             margin: 0;
             padding: 0;
+            /* background: #002060; */
             background: #19222B;
             color: #fff;
             position: relative;
@@ -80,7 +81,7 @@
 
 
         .timeline-item {
-            height: 50vh;
+            height: 100vh;
             display: flex;
             /* text-align: left; */
         }
@@ -153,7 +154,7 @@
             opacity: 0;
             animation: appear;
             animation-timeline: view(block 50% 10%);
-            width: 50rem;
+            width: 70%;
         }
 
         .timeline-photos {
@@ -164,7 +165,7 @@
             animation: appear;
             animation-timeline: view(block 50% 20%);
             margin-left: 1rem;
-            width: 20rem;
+            width: 20%;
         }
 
         .timeline-item-date {
@@ -195,6 +196,7 @@
             font-family: "Courier New";
             font-size: 0.9rem;
             font-weight: 700;
+            margin-bottom: 1rem;
         }
 
         .timeline-item-description {
@@ -208,12 +210,54 @@
             /* padding-right: 10%; */
         }
 
+        .timeline-item-description-left {
+            font-family: "Centaur";
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0rem;
+            word-spacing: 0rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            text-align: justify;
+            width: 35rem;
+            /* padding-right: 10%; */
+        }
+
+        .timeline-item-description-right {
+            font-family: "Centaur";
+            font-size: 1.1rem;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0rem;
+            word-spacing: 0rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-left: 36rem;
+            text-align: justify;
+            width: 35rem;
+            /* padding-right: 10%; */
+        }
+
         .timeline-item-keywords {
             font-family: "Courier New";
             font-size: 0.75rem;
-            font-weight: 700;
-            width: 50rem;
+            font-weight: 400;
+            /* width: 50rem; */
             margin-top: 1rem;
+            border-top: 1px solid white;
+            padding: 0.5rem;
+        }
+
+        .timeline-item-skills {
+            font-family: "Courier New";
+            font-size: 0.75rem;
+            font-weight: 400;
+            /* width: 50rem; */
+            /* margin-top: 1rem; */
+            /* border-top: 1px solid white; */
+            /* padding: 0.5rem; */
+            padding-left: 0.5rem;
         }
 
         .timeline-item-bullets {
@@ -278,15 +322,18 @@
                 <p class="timeline-item-date">April 2024 - present</p>
                 <p class="timeline-item-title">Data Scientist, Research & Development, Innovation Team</p>
                 <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
-                <p class="timeline-item-description"> I'm currently working as a researcher with a focus on
+                <p class="timeline-item-description-left"> I'm currently working as a researcher with a focus on
                     state-of-the-art strategies and algorithms in AI (especially generative AI and large language
-                    models), data science and machine learning for applications in Identity Access Management (IAM).
+                    models), data science and machine learning for applications in identity and access management (IAM).
                 </p>
-                <p class="timeline-item-description"> On any given day, I'm either building data-centric prototypes for
+                <p class="timeline-item-description-right"> On any given day, I'm either building data-centric
+                    prototypes for
                     future product features, or toeing the precarious edges of current research in AI.</p>
-                <p class="timeline-item-description"> And, in general, if I'm not thinking, I'm probably exercising.</p>
-                <p class="timeline-item-keywords"> Keywords: data science, generative artificial intelligence (genAI),
-                    large language models (LLMs), big data </p>
+                <p class="timeline-item-description-left"> And, in general, if I'm not thinking, I'm probably
+                    exercising.</p>
+                <p class="timeline-item-description-left"> LinkedIn logo, link to LinkedIn page</p>
+                <p class="timeline-item-keywords"> Keywords: data science // generative artificial intelligence //
+                    large language models // big data </p>
                 <!-- <ul class="timeline-item-bullets">
                     <li> Research and implementation of state of the art
                         strategies in generative artificial intelligence
@@ -298,6 +345,7 @@
                     <li> Keywords: generative artificial intelligence,
                         large language models (LLMs), data science, big data</li>
                 </ul> -->
+                <p class="timeline-item-skills"> Skills: python \\ technical writing \\ git + code-sharing </p>
             </div>
         </div>
         <div class="timeline-item">
@@ -315,7 +363,8 @@
                 <p class="timeline-item-title">Doctorate of Philosophy, Mechanics</p>
                 <p class="timeline-item-location">Ecole Nationale Supérieure d’Arts et Métiers, LISPEN Laboratory,
                     Lille, France</p>
-                <p class="timeline-item-description"> Before moving to Paris, I spent 3.5 years in Lille working on my
+                <p class="timeline-item-description-left"> Before moving to Paris, I spent 3.5 years in Lille working on
+                    my
                     PhD in mechanics, specializing in nonlinear dynamics of flexible structures. I was lucky enough
                     to
                     have been a part of the Marie Curie program <a class="emoji">🔗</a> <a class="integrated-link"
@@ -323,7 +372,7 @@
                     of
                     international
                     trainings and conferences.</p>
-                <p class="timeline-item-description">
+                <p class="timeline-item-description-right">
                     I defended my thesis titled <a class="integrated-link" href="https://theses.fr/2023HESAE096">🔎
                         Nonlinear
                         dynamics of highly
@@ -401,13 +450,13 @@
                 <p class="timeline-item-title">Applied Research Project, Neuromuscular Control and Human Robotics Lab
                 </p>
                 <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
-                <p class="timeline-item-description">
+                <p class="timeline-item-description-left">
                     My first research experience was in the field of soft robotics and control systems. I collaborated
                     with Dr. Carly Thalman, then in her PhD, and Tiffany Hertzell, a Bachelor's student, on a wearable
                     exosuit soft robot for human gait rehabilitation. In particuler, Carly and I focused on carrying out
                     the experimental validation of the ankle exosuit.
                 </p>
-                <p class="timeline-item-description">
+                <p class="timeline-item-description-right">
                     Although only of short duration, our collaboration was highly successful: we published (#) papers,
                     took first place in the WearRAcon Innovation competition and applied for a US patent.
                 </p>
@@ -426,20 +475,19 @@
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
             <div class="timeline-content">
-                <p class="timeline-item-date">June 2020 - December 2023</p>
-                <p class="timeline-item-title">Title</p>
-                <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
-                <ul class="timeline-item-description">
-                    <li> Research and implementation of state of the art
-                        strategies in generative artificial intelligence
-                        (AI) for efficient and innovative analysis in real
-                        time of streams of identity data</li>
-                    <li> Contribution to product innovation and to the
-                        state of the art with a focus on AI, data science
-                        and big data</li>
-                    <li> Keywords: generative artificial intelligence,
-                        large language models (LLMs), data science, big data</li>
-                </ul>
+                <p class="timeline-item-date">June 2019 - August 2019</p>
+                <p class="timeline-item-title">Internship: engine control unit for commercial aircraft</p>
+                <p class="timeline-item-location">Honeywell Engines, Phoenix, Arizona, USA</p>
+                <p class="timeline-item-description-left"> The summer prior to (officially) beginning my Master's, I had
+                    the opportunity to join Honeywell Aerospace as a systems engineer intern.</p>
+                <p class="timeline-item-description-right"> The work of my internship centered primarily on contributing
+                    to control schematic updates of Honeywell's engine control unit. During this time, I was able to
+                    deepen my understanding of industrial applications in control systems, all while coming to terms
+                    with the
+                    magnitude of the commercial aerospace industry.</p>
+                <p class="timeline-item-keywords"> Keywords: control of aerospace systems // systems engineering //
+                    aerospace engineering </p>
+                <p class="timeline-item-skills"> Skills: simulink \\ MATLAB \\ oral presentation </p>
             </div>
         </div>
         <div class="timeline-item">
