@@ -4,6 +4,11 @@
 <head>
     <!-- <link rel="stylesheet" href="start_page.css"> -->
     <title>Portfolio website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
     <style>
         * {
             margin: 0;
@@ -24,7 +29,7 @@
             height: 100vh;
             overflow-x: hidden;
             background-color: white;
-            color: white;
+            color: navy;
         }
 
         header {
@@ -37,27 +42,46 @@
             padding: 1rem 9%;
         }
 
-        .intro-text-home {
-            left: 0;
-            font-size: 1.2rem;
-            margin-top: -150px;
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            width: 100%;
+        .home-title {
+            /* left: 0; */
+            font-size: 1.5rem;
+            margin-top: 10rem;
+            margin-bottom: 1rem;
+            /* margin-top: -150px; */
+            /* position: absolute; */
+            /* text-align: center; */
+            /* top: 50%; */
+            width: 20rem;
             /* padding: 1rem 35%; */
 
         }
 
-
-        .discover-home-text {
-            left: 0;
+        .home-text {
             font-size: 1rem;
+            width: 20rem;
+            text-align: justify;
+            margin-bottom: 1rem;
+            /* left: 0;
+            
             margin-top: -120px;
             position: absolute;
             text-align: center;
             top: 50%;
-            width: 100%;
+            width: 100%; */
+            /* padding: 1rem 36.3%; */
+        }
+
+        .home-discover {
+            font-size: 1rem;
+            width: 20rem;
+            text-align: center;
+            /* left: 0;
+            
+            margin-top: -120px;
+            position: absolute;
+            
+            top: 50%;
+            width: 100%; */
             /* padding: 1rem 36.3%; */
         }
 
@@ -68,33 +92,83 @@
         } */
 
         .bg {
-            background-image: url("home_page.jpg");
+            /* background-image: url("home_page.jpg");
             height: 100%;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover; */
             /* width: 200%;
             object-fit: cover; */
         }
 
         nav a {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            font-family: Arial;
             margin-left: 0.7rem;
-            color: white;
-            transition: 0.3s ease;
+            color: navy;
+            transition: 0.2s ease;
             border-bottom: 2px solid transparent;
         }
 
         nav a:hover,
         nav a:active {
-            color: white;
+            color: pink;
             border-bottom: 2px solid pink;
+        }
+
+        .home-picture {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .home-content {
+            font-family: Arial;
+            display: inline-block;
+            width: 49%;
+            vertical-align: top;
+        }
+
+        .profile-pic {
+            width: 20rem;
+            border-radius: 50%;
+            margin-left: 5rem;
+            margin-top: 7rem;
+            border: black 2px solid;
+
+        }
+
+        .integrated-link-title {
+            font-family: Centaur;
+            font-size: 1.8rem;
+            /* font-style: italic; */
+            color: navy;
+            text-decoration: None;
+            transition: 0.2s ease;
+        }
+
+        .integrated-link {
+            font-family: Centaur;
+            font-size: 1.3rem;
+            /* font-style: italic; */
+            color: navy;
+            text-decoration: None;
+            transition: 0.2s ease;
+        }
+
+        .integrated-link:hover,
+        .integrated-link:active,
+        .integrated-link-title:hover,
+        .integrated-link-title:active {
+            color: pink;
+            border-bottom: 2px solid pink;
+            /* text-decoration: underline; */
         }
     </style>
 </head>
 
 <body>
-    <div class="bg">
+    <!-- <div class="bg"> -->
+    <div>
         <header>
             <nav>
                 <a href="#" class="active">Home</a>
@@ -102,21 +176,28 @@
                 <a href="#">About me</a>
             </nav>
         </header>
-        <section class="home">
-            <div class="intro-text-home">
-                <p>
-                    Hi, I'm Marielle.
-                </p>
-            </div>
-            <div class="discover-home-text">
-                <p>
-                    &#8901; Discover &#8901;
-                </p>
-            </div>
-            <!-- <div class="home-img">
+    </div>
+    <!-- <section class="home"> -->
+    <div class="home-picture">
+        <img src="profile-picture.jpg" class="profile-pic">
+    </div>
+    <div class="home-content">
+        <p class="home-title">
+            Hi, I'm <a class="integrated-link-title" href="https://www.linkedin.com/in/marielle-debeurre/">Marielle</a>.
+        </p>
+        <p class="home-text">
+            I'm a researcher and engineer based in Paris. I created this website from scratch in order to learn
+            about web development, and I'm sure you can tell (winky face). I like dogs, reading and exercise.
+        </p>
+        <p class="home-discover">
+            &#8901; <a class="integrated-link" href="experience_page_timeline.html">Discover</a> &#8901;
+        </p>
+        <!-- </div> -->
+
+        <!-- <div class="home-img">
                 <img src="home_page.jpg" alt="">
             </div> -->
-        </section>
+        <!-- </section> -->
     </div>
 </body>
 
