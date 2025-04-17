@@ -29,17 +29,57 @@
             height: 100vh;
             overflow-x: hidden;
             background-color: white;
-            color: navy;
+            color: black;
         }
 
         header {
-            margin-top: 20px;
-            position: fixed;
+            /* margin-top: 1rem; */
+            /* position: fixed; */
+            /* text-align: right; */
+            /* top: 0;
+            left: 0; */
+            /* width: 100%; */
+            /* padding: 0.5rem 9%; */
+        }
+
+        .header-text {
+            display: inline-block;
+            width: 20rem;
+            text-align: left;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            font-family: Monotype Corsiva;
+            font-size: 1.2rem;
+        }
+
+        .header-text-style2 {
+            width: 20rem;
+            text-align: left;
+            padding-left: 1rem;
+            font-family: Arial;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: inline-block;
+            width: 55rem;
             text-align: right;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 1rem 9%;
+        }
+
+        nav a {
+
+            font-size: 1.05rem;
+            font-family: Arial;
+            margin-left: 0.7rem;
+            color: black;
+            transition: 0.2s ease;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav a:hover,
+        nav a:active {
+            color: pink;
+            border-bottom: 2px solid pink;
         }
 
         .home-title {
@@ -56,7 +96,22 @@
 
         }
 
-        .home-text {
+        .home-text-style1 {
+            font-size: 1.3rem;
+            width: 20rem;
+            text-align: left;
+            margin-bottom: 1rem;
+            /* left: 0;
+            
+            margin-top: -120px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%; */
+            /* padding: 1rem 36.3%; */
+        }
+
+        .home-text-style2 {
             font-size: 1rem;
             width: 20rem;
             text-align: justify;
@@ -101,24 +156,10 @@
             object-fit: cover; */
         }
 
-        nav a {
-            font-size: 1.05rem;
-            font-family: Arial;
-            margin-left: 0.7rem;
-            color: navy;
-            transition: 0.2s ease;
-            border-bottom: 2px solid transparent;
-        }
-
-        nav a:hover,
-        nav a:active {
-            color: pink;
-            border-bottom: 2px solid pink;
-        }
-
         .home-picture {
             display: inline-block;
             width: 50%;
+            align-items: center;
         }
 
         .home-content {
@@ -131,17 +172,17 @@
         .profile-pic {
             width: 20rem;
             border-radius: 50%;
-            margin-left: 5rem;
-            margin-top: 7rem;
+            margin-left: 15rem;
+            margin-top: 5rem;
             border: black 2px solid;
 
         }
 
         .integrated-link-title {
-            font-family: Centaur;
+            font-family: Monotype Corsiva;
             font-size: 1.8rem;
             /* font-style: italic; */
-            color: navy;
+            color: black;
             text-decoration: None;
             transition: 0.2s ease;
         }
@@ -150,7 +191,7 @@
             font-family: Centaur;
             font-size: 1.3rem;
             /* font-style: italic; */
-            color: navy;
+            color: black;
             text-decoration: None;
             transition: 0.2s ease;
         }
@@ -163,6 +204,16 @@
             border-bottom: 2px solid pink;
             /* text-decoration: underline; */
         }
+
+        footer {
+            margin-top: 2rem;
+        }
+
+        .footer-item {
+            display: flex;
+            width: 33%;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -170,11 +221,13 @@
     <!-- <div class="bg"> -->
     <div>
         <header>
+            <p class="header-text"> Marielle Debeurre</p>
             <nav>
                 <a href="#" class="active">Home</a>
-                <a href="#">Experience</a>
+                <a href="experience_page_timeline.html">Experience</a>
                 <a href="#">About me</a>
             </nav>
+            <p class="header-text-style2"> placeholder!</p>
         </header>
     </div>
     <!-- <section class="home"> -->
@@ -185,9 +238,15 @@
         <p class="home-title">
             Hi, I'm <a class="integrated-link-title" href="https://www.linkedin.com/in/marielle-debeurre/">Marielle</a>.
         </p>
-        <p class="home-text">
-            I'm a researcher and engineer based in Paris. I created this website from scratch in order to learn
-            about web development, and I'm sure you can tell (winky face). I like dogs, reading and exercise.
+        <p class="home-text-style1">
+            I'm a researcher and engineer based in Paris.
+        </p>
+        <p class="home-text-style2">
+            I created this website from scratch in order to learn
+            about web development, and I'm sure you can tell (winky face).
+        </p>
+        <p class="home-text-style2">
+            I like dogs, reading and exercise.
         </p>
         <p class="home-discover">
             &#8901; <a class="integrated-link" href="experience_page_timeline.html">Discover</a> &#8901;
@@ -198,6 +257,13 @@
                 <img src="home_page.jpg" alt="">
             </div> -->
         <!-- </section> -->
+    </div>
+    <div>
+        <footer>
+            <p class="footer-item">&#169; placeholder</p>
+            <p class="footer-item">&#169; placeholder</p>
+            <p class="footer-item">&#169; placeholder</p>
+        </footer>
     </div>
 </body>
 
