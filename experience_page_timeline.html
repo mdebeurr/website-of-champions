@@ -212,6 +212,7 @@
         }
 
         .timeline-item-description-left {
+            display: inline-block;
             font-family: "Arial";
             font-size: 1rem;
             font-weight: 400;
@@ -225,6 +226,32 @@
             /* padding-right: 10%; */
         }
 
+        .thumbnail {
+            display: inline-block;
+            width: 12rem;
+            height: 10rem;
+            vertical-align: top;
+            margin-left: 5rem;
+        }
+
+        .thumbnail-right {
+            /* display: inline-block; */
+            /* width: 12rem; */
+            height: 8rem;
+            vertical-align: top;
+            text-align: center;
+            border: #19222B 1px solid;
+            /* margin-left: 5rem; */
+        }
+
+        .thumbnail-description-right {
+            /* display: inline-block; */
+            height: 2rem;
+            text-align: center;
+            /* justify-content: center; */
+            border: #19222B 1px solid;
+        }
+
         .timeline-item-description-right {
             font-family: "Arial";
             font-size: 1rem;
@@ -234,7 +261,7 @@
             word-spacing: 0rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
-            margin-left: 36rem;
+            margin-left: 17rem;
             text-align: justify;
             width: 35rem;
             /* padding-right: 10%; */
@@ -325,10 +352,18 @@
                 <p class="timeline-item-date">April 2024 - present</p>
                 <p class="timeline-item-title">Data Scientist, Research & Development, Innovation Team</p>
                 <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
-                <p class="timeline-item-description-left"> I'm currently working as a researcher with a focus on
-                    state-of-the-art strategies and algorithms in AI (especially generative AI and large language
-                    models), data science and machine learning for applications in identity and access management (IAM).
-                </p>
+                <div class="box1">
+                    <p class="timeline-item-description-left"> I'm currently working as a researcher with a focus on
+                        state-of-the-art strategies and algorithms in AI (especially generative AI and large language
+                        models), data science and machine learning for applications in identity and access management
+                        (IAM).
+                    </p>
+                    <div class="thumbnail">
+                        <p class="thumbnail-right"> this is a placeholder</p>
+                        <p class="thumbnail-description-right"> this is a placeholder</p>
+                    </div>
+                </div>
+
                 <p class="timeline-item-description-right"> On any given day, I'm either building data-centric
                     prototypes for
                     future product features, or toeing the precarious edges of current research in AI.</p>
@@ -491,6 +526,50 @@
                 <p class="timeline-item-keywords"> Keywords: control of aerospace systems // systems engineering //
                     aerospace engineering </p>
                 <p class="timeline-item-skills"> Skills: simulink \\ MATLAB \\ oral presentation </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> Riding in helicopter
+                </p>
+            </div>
+            <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
+                stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
+                <circle cx="50%" cy="50%" r="0rem" fill="#000" />
+            </svg>
+            <div class="timeline-content">
+                <p class="timeline-item-date">January 2019 - May 2019</p>
+                <p class="timeline-item-title">Internship: R&D and validation of helicopter rotor blades</p>
+                <p class="timeline-item-location">Van Horn Aviation, LLC, Tempe, Arizona, USA</p>
+                <p class="timeline-item-description-left"> description 1</p>
+                <p class="timeline-item-description-right"> description 2</p>
+                <p class="timeline-item-keywords"> Keywords: data science // composite materials //
+                    aerospace engineering </p>
+                <p class="timeline-item-skills"> Skills: MATLAB \\ experimental validation </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-photos">
+                <p class="timeline-item-description"> San Diego, Solar Turbines
+                </p>
+            </div>
+            <svg class="timeline-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100% 100%" fill="none"
+                stroke="currentColor" stroke-width="1rem" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="80%" y1="0" x2="80%" y2="100%" />
+                <circle cx="50%" cy="50%" r="0rem" fill="#000" />
+            </svg>
+            <div class="timeline-content">
+                <p class="timeline-item-date">May 2018 - August 2018</p>
+                <p class="timeline-item-title">Internship: data science and analysis for turbomachinery</p>
+                <p class="timeline-item-location">Solar Turbines, Inc., San Diego, California, USA</p>
+                <p class="timeline-item-description-left"> description 1</p>
+                <p class="timeline-item-description-right"> description 2</p>
+                <p class="timeline-item-keywords"> Keywords: data science // big data //
+                    real-time data analysis </p>
+                <p class="timeline-item-skills"> Skills: python \\ git \\ oral presentation </p>
             </div>
         </div>
         <div class="timeline-item">
