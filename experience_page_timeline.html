@@ -226,15 +226,24 @@
             /* padding-right: 10%; */
         }
 
-        .thumbnail {
+        .thumbnail-left {
             display: inline-block;
             width: 12rem;
             height: 10rem;
             vertical-align: top;
-            margin-left: 5rem;
+            margin-right: 1rem;
         }
 
         .thumbnail-right {
+            display: inline-block;
+            width: 12rem;
+            height: 10rem;
+            vertical-align: top;
+            margin-left: 1rem;
+        }
+
+        .thumbnail-photo-right,
+        .thumbnail-photo-left {
             /* display: inline-block; */
             /* width: 12rem; */
             height: 8rem;
@@ -244,7 +253,8 @@
             /* margin-left: 5rem; */
         }
 
-        .thumbnail-description-right {
+        .thumbnail-description-right,
+        .thumbnail-description-left {
             /* display: inline-block; */
             height: 2rem;
             text-align: center;
@@ -252,7 +262,8 @@
             border: #19222B 1px solid;
         }
 
-        .timeline-item-description-right {
+        .timeline-item-description-right-1 {
+            display: inline-block;
             font-family: "Arial";
             font-size: 1rem;
             font-weight: 400;
@@ -261,7 +272,23 @@
             word-spacing: 0rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
-            margin-left: 17rem;
+            margin-left: 13rem;
+            text-align: justify;
+            width: 35rem;
+            /* padding-right: 10%; */
+        }
+
+        .timeline-item-description-right-2 {
+            display: inline-block;
+            font-family: "Arial";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.3;
+            letter-spacing: 0rem;
+            word-spacing: 0rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            /* margin-left: 17rem; */
             text-align: justify;
             width: 35rem;
             /* padding-right: 10%; */
@@ -358,13 +385,13 @@
                         models), data science and machine learning for applications in identity and access management
                         (IAM).
                     </p>
-                    <div class="thumbnail">
-                        <p class="thumbnail-right"> this is a placeholder</p>
+                    <div class="thumbnail-right">
+                        <p class="thumbnail-photo-right"> this is a placeholder</p>
                         <p class="thumbnail-description-right"> this is a placeholder</p>
                     </div>
                 </div>
 
-                <p class="timeline-item-description-right"> On any given day, I'm either building data-centric
+                <p class="timeline-item-description-right-1"> On any given day, I'm either building data-centric
                     prototypes for
                     future product features, or toeing the precarious edges of current research in AI.</p>
                 <p class="timeline-item-description-left"> And, in general, if I'm not thinking, I'm probably
@@ -410,18 +437,25 @@
                     of
                     international
                     trainings and conferences.</p>
-                <p class="timeline-item-description-right">
-                    I defended my thesis titled <a class="integrated-link" href="https://theses.fr/2023HESAE096">🔎
-                        Nonlinear
-                        dynamics of highly
-                        flexible slender beams: efficient
-                        numerical strategies
-                        in the frequency domain</a> and under the direction of Pr. Olivier THOMAS on 13 December 2023.
-                </p>
+
+                <div class="box1">
+                    <div class="thumbnail-left">
+                        <p class="thumbnail-photo-left"> this is a placeholder</p>
+                        <p class="thumbnail-description-left"> this is a placeholder</p>
+                    </div>
+                    <p class="timeline-item-description-right-2"> I defended my thesis titled <a class="integrated-link"
+                            href="https://theses.fr/2023HESAE096">🔎Nonlinear
+                            dynamics of highly
+                            flexible slender beams: efficient
+                            numerical strategies
+                            in the frequency domain</a> and under the direction of Pr. Olivier THOMAS on 13 December
+                        2023.
+                    </p>
+                </div>
                 <ul class="timeline-item-bullets">
                     <p> Selected works ~</p>
                     <p> A comprehensive list of published works can be found on my <a class="integrated-link"
-                            href="https://scholar.google.com/citations?user=dn8y5okAAAAJ&hl=en">🔎 Google Scholar</a>
+                            href="https://scholar.google.com/citations?user=dn8y5okAAAAJ&hl=en">🔎Google Scholar</a>
                         page.
                     </p>
                     <!-- <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
