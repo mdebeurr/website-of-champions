@@ -101,6 +101,7 @@
             margin-left: -5rem;
             width: 10%;
             flex-shrink: 0;
+            color: whitesmoke;
         }
 
         @keyframes fadeIn {
@@ -157,14 +158,29 @@
             }
         }
 
-        .timeline-content {
+        .timeline-intro {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             opacity: 0;
             animation: appear;
             animation-timeline: view(block 50% 10%);
-            width: 70%;
+            width: 100%;
+        }
+
+        .timeline-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            opacity: 0;
+            animation: appear;
+            animation-timeline: view(block 50% 10%);
+            width: 50%;
+        }
+
+        .timeline-text-thumbnail {
+            flex-direction: row;
+            width: 20rem;
         }
 
         .timeline-photos {
@@ -219,13 +235,8 @@
             margin-top: 1rem;
         } */
 
-        /* .box1 {
-            display: inline-block;
-            width: 50rem;
-        } */
-
         .timeline-item-description {
-            display: inline-block;
+            /* display: inline-block; */
             font-family: "Arial";
             font-size: 1rem;
             font-weight: 400;
@@ -234,7 +245,7 @@
             word-spacing: 0rem;
             /* margin-top: 1rem; */
             margin-bottom: 1rem;
-            text-align: justify;
+            /* text-align: justify; */
             /* width: 30rem; */
             /* vertical-align: top; */
             /* padding-right: 10%; */
@@ -256,74 +267,6 @@
             /* padding-right: 10%; */
         }
 
-        /* .thumbnail-left {
-            display: inline-block;
-            width: 12rem;
-            height: 10rem;
-            vertical-align: top;
-            margin-right: 1rem;
-        }
-
-        .thumbnail-right {
-            float: right;
-            width: 12rem;
-            height: 10rem;
-            vertical-align: top;
-            margin-left: 1rem;
-        } */
-
-        /* .thumbnail-photo-right, */
-        /* .thumbnail-photo-left { */
-        /* display: inline-block; */
-        /* float: right; */
-        /* width: 12rem; */
-        /* height: 8rem; */
-        /* vertical-align: top; */
-        /* text-align: center; */
-        /* border: #19222B 1px solid; */
-        /* margin-left: 5rem; */
-        /* } */
-        /* 
-        .thumbnail-description-right,
-        .thumbnail-description-left { */
-        /* display: inline-block; */
-        /* height: 2rem;
-            text-align: center; */
-        /* justify-content: center; */
-        /* border: #19222B 1px solid; */
-        /* } */
-
-        /* .timeline-item-description-right-1 {
-            display: inline-block;
-            font-family: "Arial";
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.3;
-            letter-spacing: 0rem;
-            word-spacing: 0rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            margin-left: 13rem;
-            text-align: justify;
-            width: 35rem;
-        } */
-
-        /* .timeline-item-description-right-2 {
-            display: inline-block;
-            font-family: "Arial";
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.3;
-            letter-spacing: 0rem;
-            word-spacing: 0rem; */
-        /* margin-top: 1rem; */
-        /* margin-bottom: 1rem; */
-        /* margin-left: 17rem; */
-        /* text-align: justify;
-            width: 35rem; */
-        /* padding-right: 10%; */
-        /* } */
-
         .timeline-item-keywords {
             font-family: "Courier New";
             font-size: 0.75rem;
@@ -343,13 +286,6 @@
             /* border-top: 1px solid white; */
             /* padding: 0.5rem; */
             padding-left: 0.5rem;
-        }
-
-        .timeline-item-bullets {
-            font-size: 0.85rem;
-            font-weight: 0;
-            line-height: 1.1;
-            /* padding-right: 10%; */
         }
 
         .integrated-link {
@@ -407,45 +343,32 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">April 2024 - present</p>
                 <p class="timeline-item-title">Data Scientist, Research & Development, Innovation Team</p>
                 <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
-                <!-- <div class="box1"> -->
-                <p class="timeline-item-description"> I'm currently working as a researcher with a focus on
-                    state-of-the-art strategies and algorithms in AI (especially generative AI and large language
-                    models), data science and machine learning for applications in identity and access management
-                    (IAM).
-                </p>
-                <p class="timeline-item-description"> On any given day, I'm either building data-centric
-                    prototypes for
-                    future product features, or toeing the precarious edges of current research in AI.</p>
-                <!-- </div> -->
-                <!-- <div class="thumbnail-right"> -->
-                <!-- <img class="thumbnail-photo-right" width="12"> -->
-                <!-- <p class="thumbnail-description-right"> this is a placeholder</p> -->
-                <!-- </div> -->
-
-
-                <!-- <p class="timeline-item-description-right-1"> On any given day, I'm either building data-centric
-                    prototypes for
-                    future product features, or toeing the precarious edges of current research in AI.</p> -->
-                <p class="timeline-item-description"> And, in general, if I'm not thinking, I'm probably
-                    exercising.</p>
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description"> I'm currently working as a researcher with a focus on
+                            state-of-the-art strategies and algorithms in AI (especially generative AI and large
+                            language
+                            models), data science and machine learning for applications in identity and access
+                            management
+                            (IAM).
+                        </p>
+                        <p class="timeline-item-description"> On any given day, I'm either building data-centric
+                            prototypes for
+                            future product features, or toeing the precarious edges of current research in AI.</p>
+                        <p class="timeline-item-description"> And, in general, if I'm not thinking, I'm probably
+                            exercising.</p>
+                    </div>
+                    <div>
+                        <p> test </p>
+                    </div>
+                </div>
                 <p class="timeline-item-description-small"> LinkedIn logo, link to LinkedIn page</p>
                 <p class="timeline-item-keywords"> Keywords: data science // generative artificial intelligence //
                     large language models // big data </p>
-                <!-- <ul class="timeline-item-bullets">
-                    <li> Research and implementation of state of the art
-                        strategies in generative artificial intelligence
-                        (AI) for efficient and innovative analysis in real
-                        time of streams of identity data</li>
-                    <li> Contribution to product innovation and to the
-                        state of the art with a focus on AI, data science
-                        and big data</li>
-                    <li> Keywords: generative artificial intelligence,
-                        large language models (LLMs), data science, big data</li>
-                </ul> -->
                 <p class="timeline-item-skills"> Skills: python \\ technical writing \\ git + code-sharing </p>
             </div>
         </div>
@@ -459,59 +382,43 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">June 2020 - December 2023</p>
                 <p class="timeline-item-title">Doctorate of Philosophy, Mechanics</p>
                 <p class="timeline-item-location">Ecole Nationale Supérieure d’Arts et Métiers, LISPEN Laboratory,
                     Lille, France</p>
-                <p class="timeline-item-description"> Before moving to Paris, I spent 3.5 years in Lille working on
-                    my
-                    PhD in mechanics, specializing in nonlinear dynamics of flexible structures. I was lucky enough
-                    to
-                    have been a part of the Marie Curie program <a class="emoji">🔗</a> <a class="integrated-link"
-                        href="https://thread-etn.eu/">Thread ETN</a>, which funded a cornucopia
-                    of
-                    international
-                    trainings and conferences.</p>
-
-                <!-- <div class="box1"> -->
-                <!-- <div class="thumbnail-left">
-                        <p class="thumbnail-photo-left"> this is a placeholder</p>
-                        <p class="thumbnail-description-left"> this is a placeholder</p>
-                    </div> -->
-                <p class="timeline-item-description"> I defended my thesis titled <a class="integrated-link"
-                        href="https://theses.fr/2023HESAE096">🔎Nonlinear
-                        dynamics of highly
-                        flexible slender beams: efficient
-                        numerical strategies
-                        in the frequency domain</a> and under the direction of Pr. Olivier THOMAS on 13 December
-                    2023.
-                </p>
-                <p class="timeline-item-description-small">A comprehensive list of published works can be found on my <a
-                        class="integrated-link"
-                        href="https://scholar.google.com/citations?user=dn8y5okAAAAJ&hl=en">🔎Google Scholar</a>
-                    page.</p>
-                <!-- </div> -->
-                <!-- <ul class="timeline-item-bullets">
-                    <p> Selected works ~</p>
-                    <p> A comprehensive list of published works can be found on my <a class="integrated-link"
-                            href="https://scholar.google.com/citations?user=dn8y5okAAAAJ&hl=en">🔎Google Scholar</a>
-                        page.
-                    </p> -->
-                <!-- <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
-                        modes and frequency response of geometrically exact beam structures. Journal of Sound and
-                        Vibrations, 548 (117534).</p>
-                    <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
-                        modes and frequency response of geometrically exact beam structures. Journal of Sound and
-                        Vibrations, 548 (117534).</p>
-                    <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
-                        modes and frequency response of geometrically exact beam structures. Journal of Sound and
-                        Vibrations, 548 (117534).</p>
-                    <p> [1] Debeurre, M., Grolet, A., Cochelin, B., Thomas, O.: Finite element computation of nonlinear
-                        modes and frequency response of geometrically exact beam structures. Journal of Sound and
-                        Vibrations, 548 (117534).</p>
-                    <p> Research topics + papers </p> -->
-                </ul>
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description"> Before moving to Paris, I spent 3.5 years in Lille working
+                            on
+                            my
+                            PhD in mechanics, specializing in nonlinear dynamics of flexible structures. I was lucky
+                            enough
+                            to
+                            have been a part of the Marie Curie program <a class="emoji">🔗</a> <a
+                                class="integrated-link" href="https://thread-etn.eu/">Thread ETN</a>, which funded a
+                            cornucopia
+                            of
+                            international
+                            trainings and conferences.</p>
+                        <p class="timeline-item-description"> I defended my thesis titled <a class="integrated-link"
+                                href="https://theses.fr/2023HESAE096">🔎Nonlinear
+                                dynamics of highly
+                                flexible slender beams: efficient
+                                numerical strategies
+                                in the frequency domain</a> and under the direction of Pr. Olivier THOMAS on 13 December
+                            2023.
+                        </p>
+                        <p class="timeline-item-description-small">A comprehensive list of published works can be found
+                            on
+                            my <a class="integrated-link"
+                                href="https://scholar.google.com/citations?user=dn8y5okAAAAJ&hl=en">🔎Google Scholar</a>
+                            page.</p>
+                    </div>
+                    <div>
+                        <p>test</p>
+                    </div>
+                </div>
                 <p class="timeline-item-keywords"> Keywords: nonlinear dynamics, continuum mechanics, mechanical
                     vibrations, periodic systems, control of mechanical systems, finite element method </p>
             </div>
@@ -526,29 +433,37 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">August 2019 - May 2020</p>
                 <p class="timeline-item-title">Master of Science, Mechanical Engineering</p>
                 <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
-                <p class="timeline-item-description">
-                    I moved to France in May 2020 (and what a trek it was (link to covid article)). But before the PhD
-                    came the Master's, this time specializing in controls. I completed my Master's as part of the 4+1
-                    program at ASU and capped off my 5 years there with a research project in soft robotics and a
-                    graduate TA-ship in control of dynamical systems (100+ lesson hours).
-                </p>
-                <p class="timeline-item-description"> These first forays into teaching and research defined the
-                    trajectory of my future as a researcher.
-                    I'm especially grateful to Pr. Hyunglae Lee and Dr. Carly Thalman for their guidance and expertise.
-                </p>
-                <p class="timeline-item-description-small">
-                    I was proud to have recieved the award for "Outstanding Graduate Teaching Assistant -
-                    Mechanical and Aerospace Engineering" for the 2019-2020 school year.
-                </p>
-                <!-- <ul class="timeline-item-bullets">
-                    <p> University honors </p>
-                    <li> I was proud to have recieved the award for "Outstanding Graduate Teaching Assistant -
-                        Mechanical and Aerospace Engineering" for the 2019-2020 school year. </li>
-                </ul> -->
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description">
+                            I moved to France in May 2020 (and what a trek it was (link to covid article)). But before
+                            the
+                            PhD
+                            came the Master's, this time specializing in controls. I completed my Master's as part of
+                            the
+                            4+1
+                            program at ASU and capped off my 5 years there with a research project in soft robotics and
+                            a
+                            graduate TA-ship in control of dynamical systems (100+ lesson hours).
+                        </p>
+                        <p class="timeline-item-description"> These first forays into teaching and research defined the
+                            trajectory of my future as a researcher.
+                            I'm especially grateful to Pr. Hyunglae Lee and Dr. Carly Thalman for their guidance and
+                            expertise.
+                        </p>
+                        <p class="timeline-item-description-small">
+                            I was proud to have recieved the award for "Outstanding Graduate Teaching Assistant -
+                            Mechanical and Aerospace Engineering" for the 2019-2020 school year.
+                        </p>
+                    </div>
+                    <div>
+                        <p> test</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="timeline-item">
@@ -561,30 +476,35 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">December 2019 - May 2020</p>
-                <p class="timeline-item-title">Applied Research Project, Neuromuscular Control and Human Robotics Lab
+                <p class="timeline-item-title">Applied Research Project, Neuromuscular Control and Human Robotics
+                    Lab
                 </p>
                 <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
-                <!-- <div class="box1"> -->
-                <p class="timeline-item-description"> My first research experience was in the field of soft
-                    robotics and control systems. I collaborated
-                    with Dr. Carly Thalman, then in her PhD, and Tiffany Hertzell, a Bachelor's student, on a
-                    wearable
-                    exosuit soft robot for human gait rehabilitation. In particuler, Carly and I focused on carrying
-                    out
-                    the experimental validation of the ankle exosuit.
-                </p>
-                <!-- <div class="thumbnail-right">
-                        <p class="thumbnail-photo-right"> this is a placeholder</p>
-                        <p class="thumbnail-description-right"> From left to right: me, Carly and Tiffany</p>
-                    </div> -->
-                <!-- </div> -->
-                <p class="timeline-item-description">
-                    Although only of short duration, our collaboration was highly successful: we published (#) papers,
-                    took first place in the WearRAcon Innovation competition and applied for a US patent.
-                </p>
-                <p class="timeline-item-keywords"> Keywords: soft robotics, control of robotic systems, robotic design,
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description"> My first research experience was in the field of soft
+                            robotics and control systems. I collaborated
+                            with Dr. Carly Thalman, then in her PhD, and Tiffany Hertzell, a Bachelor's student, on a
+                            wearable
+                            exosuit soft robot for human gait rehabilitation. In particuler, Carly and I focused on
+                            carrying
+                            out
+                            the experimental validation of the ankle exosuit.
+                        </p>
+                        <p class="timeline-item-description">
+                            Although only of short duration, our collaboration was highly successful: we published (#)
+                            papers,
+                            took first place in the WearRAcon Innovation competition and applied for a US patent.
+                        </p>
+                    </div>
+                    <div>
+                        <p>test</p>
+                    </div>
+                </div>
+                <p class="timeline-item-keywords"> Keywords: soft robotics, control of robotic systems, robotic
+                    design,
                     biomechanics </p>
             </div>
         </div>
@@ -598,25 +518,29 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">June 2019 - August 2019</p>
                 <p class="timeline-item-title">Internship: engine control unit for commercial aircraft</p>
                 <p class="timeline-item-location">Honeywell Engines, Phoenix, Arizona, USA</p>
-                <p class="timeline-item-description"> The summer prior to (officially) beginning my Master's, I had
-                    the opportunity to join Honeywell Aerospace as a systems engineer intern.</p>
-                <!-- <div class="box1"> -->
-                <!-- <div class="thumbnail-left">
-                        <p class="thumbnail-photo-left"> this is a placeholder</p>
-                        <p class="thumbnail-description-left"> Taken from inside a test plane</p>
-                    </div> -->
-                <p class="timeline-item-description"> The work of my internship centered primarily on
-                    contributing
-                    to control schematic updates of Honeywell's engine control unit. During this time, I was able to
-                    deepen my understanding of industrial applications in control systems, all while coming to terms
-                    with the
-                    magnitude of the commercial aerospace industry.
-                </p>
-                <!-- </div> -->
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description"> The summer prior to (officially) beginning my Master's, I
+                            had
+                            the opportunity to join Honeywell Aerospace as a systems engineer intern.</p>
+                        <p class="timeline-item-description"> The work of my internship centered primarily on
+                            contributing
+                            to control schematic updates of Honeywell's engine control unit. During this time, I was
+                            able to
+                            deepen my understanding of industrial applications in control systems, all while coming to
+                            terms
+                            with the
+                            magnitude of the commercial aerospace industry.
+                        </p>
+                    </div>
+                    <div>
+                        <p>test</p>
+                    </div>
+                </div>
                 <p class="timeline-item-keywords"> Keywords: control of aerospace systems // systems engineering //
                     aerospace engineering </p>
                 <p class="timeline-item-skills"> Skills: simulink \\ MATLAB \\ oral presentation </p>
@@ -633,17 +557,28 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">January 2019 - May 2019</p>
                 <p class="timeline-item-title">Internship: R&D and validation of helicopter rotor blades</p>
                 <p class="timeline-item-location">Van Horn Aviation, LLC, Tempe, Arizona, USA</p>
-                <p class="timeline-item-description"> My internship at Van Horn Aviation stands out as the most
-                    involvement in a company I experienced as an intern.</p>
-                <p class="timeline-item-description"> During my time at Van Horn, I worked in close
-                    collaboration with the engineering team on the validation of their latest composite rotor blades. I
-                    took over the MATLAB code for data reduction and analysis of flight test data, and was lucky enough
-                    to participate myself in the flight tests. With fabrication being in-house, I was able to build the
-                    composite test specimens myself (vacuum-sealing, the autoclave ... the works).</p>
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description"> My internship at Van Horn Aviation stands out as the most
+                            involvement in a company I experienced as an intern.</p>
+                        <p class="timeline-item-description"> During my time at Van Horn, I worked in close
+                            collaboration with the engineering team on the validation of their latest composite rotor
+                            blades. I
+                            took over the MATLAB code for data reduction and analysis of flight test data, and was lucky
+                            enough
+                            to participate myself in the flight tests. With fabrication being in-house, I was able to
+                            build
+                            the
+                            composite test specimens myself (vacuum-sealing, the autoclave ... the works).</p>
+                    </div>
+                    <div>
+                        <p>test</p>
+                    </div>
+                </div>
                 <p class="timeline-item-keywords"> Keywords: data science // composite materials //
                     aerospace engineering </p>
                 <p class="timeline-item-skills"> Skills: MATLAB \\ experimental validation </p>
@@ -660,18 +595,28 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">May 2018 - August 2018</p>
                 <p class="timeline-item-title">Internship: data science and analysis for turbomachinery</p>
                 <p class="timeline-item-location">Solar Turbines, Inc., San Diego, California, USA</p>
-                <p class="timeline-item-description"> A chance encounter at the 2018 Society of Women Engineers
-                    conference in Austin, Texas set me on my winding
-                    path to becoming a data
-                    scientist.</p>
-                <p class="timeline-item-description"> During my time at Solar Turbines I was introduced to python,
-                    big data and data science via a real-time platform for health-monitoring of turbomachinery. My
-                    particular contribution focused on implementing a system of flags for detecting when health sensors
-                    exceeded their prescribed bounds. </p>
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description"> A chance encounter at the 2018 Society of Women Engineers
+                            conference in Austin, Texas set me on my winding
+                            path to becoming a data
+                            scientist.</p>
+                        <p class="timeline-item-description"> During my time at Solar Turbines I was introduced to
+                            python,
+                            big data and data science via a real-time platform for health-monitoring of turbomachinery.
+                            My
+                            particular contribution focused on implementing a system of flags for detecting when health
+                            sensors
+                            exceeded their prescribed bounds. </p>
+                    </div>
+                    <div>
+                        <p>test</p>
+                    </div>
+                </div>
                 <p class="timeline-item-keywords"> Keywords: data science // big data //
                     real-time data analysis </p>
                 <p class="timeline-item-skills"> Skills: python \\ git \\ oral presentation </p>
@@ -687,25 +632,40 @@
                 <line x1="80%" y1="0" x2="80%" y2="100%" />
                 <circle cx="50%" cy="50%" r="0rem" fill="#000" />
             </svg>
-            <div class="timeline-content">
+            <div class="timeline-intro">
                 <p class="timeline-item-date">August 2015 - May 2019</p>
                 <p class="timeline-item-title">Bachelor of Science in Engineering, Mechanical Engineering</p>
                 <p class="timeline-item-location">Arizona State University, Tempe, Arizona, USA</p>
-                <p class="timeline-item-description-left"> I started down the path to engineerdom under the hot
-                    late-summer Arizona sun in the year 2015 (fun fact: I spent the summer of 2015 in the equally warm
-                    kitchen of a local Chick-Fil-A, a job I maintained throughout my first year of studies at ASU).</p>
-                <p class="timeline-item-description-right-1"> I specialized in mechanical engineering largely on a whim,
-                    not knowing much about engineering with my liberal arts background apart from the heavy implication
-                    of math and science.</p>
-                <p class="timeline-item-description-left"> The journey of my Bachelor's is nothing short of a
-                    metaphorical rags-to-riches; I failed my first-ever engineering mechanics exam ... and graduated
-                    first in my class in May 2019.</p>
+                <div class="timeline-content">
+                    <div>
+                        <p class="timeline-item-description"> I started down the path to engineerdom under the hot
+                            late-summer Arizona sun in the year 2015 (fun fact: I spent the summer of 2015 in the
+                            equally
+                            warm
+                            kitchen of a local Chick-Fil-A, a job I maintained throughout my first year of studies at
+                            ASU).
+                        </p>
+                        <p class="timeline-item-description"> I specialized in mechanical engineering largely on a
+                            whim,
+                            not knowing much about engineering with my liberal arts background apart from the heavy
+                            implication
+                            of math and science.</p>
+                        <p class="timeline-item-description"> The journey of my Bachelor's is nothing short of a
+                            metaphorical rags-to-riches; I failed my first-ever engineering mechanics exam ... and
+                            graduated
+                            first in my class in May 2019.</p>
+                    </div>
+                    <div>
+                        <p>
+                            test
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <p>Back to top</p>
-        <!-- <p>Proving that he is a way better dev and designer than Marielle !</p> -->
     </footer>
 </body>
 
