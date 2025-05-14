@@ -178,9 +178,11 @@
             width: 50%;
         }
 
-        .timeline-text-thumbnail {
-            flex-direction: row;
-            width: 20rem;
+        .thumbnail {
+            margin-left: 5rem;
+            /* width: 10rem; */
+            height: 10rem;
+            border: 1px solid gray;
         }
 
         .timeline-photos {
@@ -314,6 +316,11 @@
             justify-content: center;
             align-items: center;
         }
+
+        .back-to-top {
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -323,6 +330,7 @@
         <div class="progress-bar"></div>
     </div>
     -->
+    <a id="top"></a>
     <div class="intro">
         <p class="intro-title">Life Experience</p>
         <p class="intro-title-subtext">(resume, CV, whatever definition works for you)</p>
@@ -346,7 +354,7 @@
             <div class="timeline-intro">
                 <p class="timeline-item-date">April 2024 - present</p>
                 <p class="timeline-item-title">Data Scientist, Research & Development, Innovation Team</p>
-                <p class="timeline-item-location">Radiant Logic, Asnieres-sur-Seine, Ile-de-France, France</p>
+                <p class="timeline-item-location">Radiant Logic, Asnières-sur-Seine, Île-de-France, France</p>
                 <div class="timeline-content">
                     <div>
                         <p class="timeline-item-description"> I'm currently working as a researcher with a focus on
@@ -363,7 +371,7 @@
                             exercising.</p>
                     </div>
                     <div>
-                        <p> test </p>
+                        <p class="thumbnail"> test </p>
                     </div>
                 </div>
                 <p class="timeline-item-description-small"> LinkedIn logo, link to LinkedIn page</p>
@@ -416,7 +424,7 @@
                             page.</p>
                     </div>
                     <div>
-                        <p>test</p>
+                        <p class="thumbnail">test</p>
                     </div>
                 </div>
                 <p class="timeline-item-keywords"> Keywords: nonlinear dynamics, continuum mechanics, mechanical
@@ -461,7 +469,7 @@
                         </p>
                     </div>
                     <div>
-                        <p> test</p>
+                        <p class="thumbnail"> test</p>
                     </div>
                 </div>
             </div>
@@ -500,7 +508,7 @@
                         </p>
                     </div>
                     <div>
-                        <p>test</p>
+                        <p class="thumbnail">test</p>
                     </div>
                 </div>
                 <p class="timeline-item-keywords"> Keywords: soft robotics, control of robotic systems, robotic
@@ -538,7 +546,7 @@
                         </p>
                     </div>
                     <div>
-                        <p>test</p>
+                        <p class="thumbnail">test</p>
                     </div>
                 </div>
                 <p class="timeline-item-keywords"> Keywords: control of aerospace systems // systems engineering //
@@ -576,7 +584,7 @@
                             composite test specimens myself (vacuum-sealing, the autoclave ... the works).</p>
                     </div>
                     <div>
-                        <p>test</p>
+                        <p class="thumbnail">test</p>
                     </div>
                 </div>
                 <p class="timeline-item-keywords"> Keywords: data science // composite materials //
@@ -614,7 +622,7 @@
                             exceeded their prescribed bounds. </p>
                     </div>
                     <div>
-                        <p>test</p>
+                        <p class="thumbnail">test</p>
                     </div>
                 </div>
                 <p class="timeline-item-keywords"> Keywords: data science // big data //
@@ -656,16 +664,18 @@
                             first in my class in May 2019.</p>
                     </div>
                     <div>
-                        <p>
+                        <p class="thumbnail">
                             test
                         </p>
                     </div>
                 </div>
+                <p><a class="back-to-top" href="#top">Back to top</a> Replace this with the CSS smooth transition back
+                    to top button</p>
             </div>
         </div>
     </div>
     <footer>
-        <p>Back to top</p>
+        <p>Made by Marielle, and all the jazz</p>
     </footer>
 </body>
 
