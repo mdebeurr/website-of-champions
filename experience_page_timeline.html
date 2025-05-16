@@ -61,11 +61,12 @@
             justify-content: center;
             align-items: center;
             background-color: whitesmoke;
+            font-family: 'Arial';
         }
 
         .intro-title {
             font-size: 3rem;
-            font-weight: 800;
+            font-weight: 400;
             /* margin-bottom: 1rem; */
             letter-spacing: 0rem;
             word-spacing: 0rem;
@@ -73,20 +74,32 @@
 
         .intro-title-subtext {
             font-size: 1rem;
-            font-weight: 800;
+            font-weight: 400;
             margin-bottom: 1rem;
             letter-spacing: 0rem;
             word-spacing: 0rem;
         }
 
-        .intro-description {
+        .intro-description,
+        .intro-description-title {
             font-size: 1rem;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 1.5;
             letter-spacing: 0rem;
             word-spacing: 0rem;
             text-wrap: balance;
             text-align: center;
+            color: gray;
+        }
+
+        .intro-description {
+            margin-bottom: 1rem;
+        }
+
+        .intro-description-title {
+            font-size: 1.5rem;
+            /* text-align: left;
+            justify-content: left; */
         }
 
 
@@ -102,6 +115,7 @@
             width: 10%;
             flex-shrink: 0;
             color: whitesmoke;
+            /* background-color: whitesmoke; */
         }
 
         @keyframes fadeIn {
@@ -192,9 +206,10 @@
             opacity: 0;
             animation: appear;
             animation-timeline: view(block 50% 20%);
-            margin-left: 1rem;
+            padding-left: 1rem;
             width: 20%;
-            margin-top: 1rem;
+            padding-top: 1rem;
+            background-color: whitesmoke;
         }
 
         .timeline-item-date {
@@ -334,11 +349,14 @@
     <div class="intro">
         <p class="intro-title">Life Experience</p>
         <p class="intro-title-subtext">(resume, CV, whatever definition works for you)</p>
+        <p class="intro-description-title">
+            Summary </p>
         <p class="intro-description">
-            Timeline prototype using HTML and CSS only with the new scroll driven
-            animation feature in CSS.
+            After 8 years of higher education and research experience in mechanical engineering, I chose to pivot to
+            data science and artificial intelligence to be at the forefront of innovation in technology. I enjoy making
+            technical topics accessible and using my skills to better the world.
         </p>
-        <p class="intro-description">Scroll on, friends!</p>
+        <p class="intro-description">For a complete timeline of my professional and academic experience, scroll on!</p>
     </div>
     <div class="timeline">
         <div class="timeline-item">
