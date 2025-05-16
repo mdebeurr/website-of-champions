@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timeline</title>
+    <link rel="stylesheet" href="website_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,14 +55,28 @@
             margin: 0;
         }
 
+        .CV-intro,
         .intro {
             height: 100vh;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             background-color: whitesmoke;
             font-family: 'Arial';
+        }
+
+        .intro {
+            flex-direction: column;
+        }
+
+        .profile-pic {
+            width: 15rem;
+            border-radius: 60%;
+            margin-left: 5rem;
+            /* margin-top: 7rem; */
+            border: #19222B 2px solid;
+
         }
 
         .intro-title {
@@ -346,17 +361,33 @@
     </div>
     -->
     <a id="top"></a>
-    <div class="intro">
-        <p class="intro-title">Life Experience</p>
-        <p class="intro-title-subtext">(resume, CV, whatever definition works for you)</p>
-        <p class="intro-description-title">
-            Summary </p>
-        <p class="intro-description">
-            After 8 years of higher education and research experience in mechanical engineering, I chose to pivot to
-            data science and artificial intelligence to be at the forefront of innovation in technology. I enjoy making
-            technical topics accessible and using my skills to better the world.
-        </p>
-        <p class="intro-description">For a complete timeline of my professional and academic experience, scroll on!</p>
+    <div>
+        <header>
+            <p class="header-text"> Marielle Debeurre</p>
+            <nav>
+                <a href="start_page.html">Home</a>
+                <a href="experience_page_timeline.html">Experience</a>
+                <a href="#">About me</a>
+            </nav>
+            <p class="header-text-style2"> placeholder!</p>
+        </header>
+    </div>
+    <div class="CV-intro">
+        <img src="Headshot_pro_cropped.jpg" class="profile-pic">
+        <div class="intro">
+            <p class="intro-title">Life Experience</p>
+            <p class="intro-title-subtext">(resume, CV, whatever definition works for you)</p>
+            <p class="intro-description-title">
+                Summary </p>
+            <p class="intro-description">
+                After 8 years of higher education and research experience in mechanical engineering, I chose to pivot to
+                data science and artificial intelligence to be at the forefront of innovation in technology. I enjoy
+                making
+                technical topics accessible and using my skills to better the world.
+            </p>
+            <p class="intro-description">For a complete timeline of my professional and academic experience, scroll on!
+            </p>
+        </div>
     </div>
     <div class="timeline">
         <div class="timeline-item">
