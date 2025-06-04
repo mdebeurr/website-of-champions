@@ -3,253 +3,26 @@
 
 <head>
     <link rel="stylesheet" href="website_style.css">
+    <link rel="stylesheet" href="start_page.css">
     <title>Portfolio website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
-    <style>
-        /* * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            border: none;
-            outline: none;
-            /* font-family: 'Poppins', sans-serif;
-        } */
-
-        /* html {
-            font-size: 62.5%;
-        } */
-
-        body {
-            width: 100%;
-            height: 100vh;
-            overflow-x: hidden;
-            background-color: white;
-            color: #19222B;
-        }
-
-        header {
-            /* margin-top: 1rem; */
-            /* position: fixed; */
-            /* text-align: right; */
-            /* top: 0;
-            left: 0; */
-            /* width: 100%; */
-            /* padding: 0.5rem 9%; */
-        }
-
-        /* .header-text {
-            display: inline-block;
-            width: 20rem;
-            text-align: left;
-            padding-top: 1rem;
-            padding-left: 1rem;
-            font-family: Monotype Corsiva;
-            font-size: 1.2rem;
-        }
-
-        .header-text-style2 {
-            width: 20rem;
-            text-align: left;
-            padding-left: 1rem;
-            font-family: Arial;
-            font-size: 1.2rem;
-        }
-
-        nav {
-            display: inline-block;
-            width: 55rem;
-            text-align: right;
-        }
-
-        nav a {
-
-            font-size: 1.05rem;
-            font-family: Arial;
-            margin-left: 0.7rem;
-            color: #19222B;
-            transition: 0.2s ease;
-            border-bottom: 2px solid transparent;
-        }
-
-        nav a:hover,
-        nav a:active {
-            color: pink;
-            border-bottom: 2px solid pink;
-        } */
-
-        .home-title {
-            /* left: 0; */
-            font-size: 1.5rem;
-            margin-top: 10rem;
-            margin-bottom: 1rem;
-            /* margin-top: -150px; */
-            /* position: absolute; */
-            /* text-align: center; */
-            /* top: 50%; */
-            width: 20rem;
-            /* padding: 1rem 35%; */
-
-        }
-
-        .home-text-style1 {
-            font-size: 1.3rem;
-            width: 20rem;
-            text-align: left;
-            margin-bottom: 1rem;
-            /* left: 0;
-            
-            margin-top: -120px;
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            width: 100%; */
-            /* padding: 1rem 36.3%; */
-        }
-
-        .home-text-style2 {
-            font-size: 1rem;
-            width: 20rem;
-            text-align: justify;
-            margin-bottom: 1rem;
-            line-height: 1.3rem;
-            /* left: 0;
-            
-            margin-top: -120px;
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            width: 100%; */
-            /* padding: 1rem 36.3%; */
-        }
-
-        .home-discover {
-            font-size: 1rem;
-            width: 20rem;
-            text-align: center;
-            /* left: 0;
-            
-            margin-top: -120px;
-            position: absolute;
-            
-            top: 50%;
-            width: 100%; */
-            /* padding: 1rem 36.3%; */
-        }
-
-        /* .discover-button:hover,
-        .discover-button:active {
-            color: white;
-            border-bottom: 2px solid pink;
-        } */
-
-        .home {
-            display: flex;
-            flex-direction: row;
-            height: 70vh;
-            align-items: center;
-            justify-content: center;
-            padding-left: 3rem;
-            padding-right: 3rem;
-
-        }
-
-        .bg {
-            /* background-image: url("home_page.jpg");
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover; */
-            /* width: 200%;
-            object-fit: cover; */
-        }
-
-        .home-picture {
-            display: flex;
-            /* width: 50%; */
-            /* align-items: center; */
-            justify-content: center;
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-
-        .home-content {
-            font-family: Arial;
-            /* justify-content: flex-start; */
-            /* display: inline-block; */
-            /* width: 49%; */
-            vertical-align: top;
-        }
-
-        .profile-pic {
-            width: 25vw;
-            height: 50vh;
-            max-width: 20rem;
-            max-height: 30rem;
-            border-radius: 60%;
-            /* margin-left: 17rem; */
-            /* margin-top: 7rem; */
-            border: #19222B 2px solid;
-        }
-
-        .integrated-link-title {
-            font-family: "Calisto MT", "Monotype Corsiva";
-            font-size: 1.5rem;
-            /* font-style: italic; */
-            color: #19222B;
-            text-decoration: None;
-            transition: 0.2s ease;
-        }
-
-        .integrated-link {
-            font-family: "Calisto MT", "Centaur";
-            font-size: 1rem;
-            /* font-style: italic; */
-            color: #19222B;
-            text-decoration: None;
-            transition: 0.2s ease;
-        }
-
-        .integrated-link:hover,
-        .integrated-link:active,
-        .integrated-link-title:hover,
-        .integrated-link-title:active {
-            color: pink;
-            border-bottom: 2px solid pink;
-            /* text-decoration: underline; */
-        }
-
-        .emoji {
-            font-size: 1.2rem;
-        }
-
-        footer {
-            margin-top: 2rem;
-        }
-
-        .footer-item {
-            display: flex;
-            width: 33%;
-            align-items: center;
-        }
-    </style>
 </head>
 
 <body>
     <!-- <div class="bg"> -->
     <div>
         <header>
-            <p class="header-text"> Marielle Debeurre</p>
+            <p class="header-text"> MARIELLE DEBEURRE</p>
             <nav>
-                <a href="start_page.html" class="active">Home</a>
-                <a href="experience_page_timeline.html">Experience</a>
-                <a href="#">About me</a>
+                <a href="start_page.html" class="active">HOME</a>
+                <a href="experience_page_timeline.html">EXPERIENCE</a>
+                <!-- <a href="#">About me</a> -->
             </nav>
-            <p class="header-text-style2"> placeholder!</p>
+            <!-- <p class="header-text-style2"> placeholder!</p> -->
         </header>
     </div>
     <div class="home">
@@ -280,6 +53,9 @@
                 <img src="home_page.jpg" alt="">
             </div> -->
         </div>
+    </div>
+    <div class="home-subitem">
+
     </div>
     <div>
         <footer>
