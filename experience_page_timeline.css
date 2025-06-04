@@ -58,6 +58,7 @@ p {
 .intro {
     flex-direction: column;
     min-height: 30rem;
+    border-bottom: 1px solid black;
 }
 
 .CV-intro {
@@ -92,13 +93,14 @@ p {
 }
 
 .intro-title {
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 100;
     margin-top: 1rem;
     /* margin-bottom: 1rem; */
-    letter-spacing: 0.1rem;
-    word-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
+    /* word-spacing: 0.1rem; */
     font-family: "Calisto-MT";
+    /* color: gray; */
 }
 
 .intro-title-subtext {
@@ -124,10 +126,11 @@ p {
 .intro-description {
     margin-bottom: 1rem;
     padding-left: 0.5rem;
+    /* text-align: justify; */
 }
 
 .intro-description-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "Calisto-MT";
     margin-bottom: 0.3rem;
     letter-spacing: 0.1rem;
@@ -140,8 +143,26 @@ p {
 .timeline-item {
     height: 100vh;
     display: flex;
+    border-bottom: 1px solid black;
     /* text-align: left; */
 }
+
+.timeline-identification {
+    font-family: "Calisto-MT";
+    text-align: center;
+    padding: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+    font-size: 0.9rem;
+    /* font-weight: 700; */
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: gray;
+    /* border-bottom: 1px solid gray;
+    border-right: 1px solid gray; */
+    /* border-top: 1px solid gray; */
+}
+
 
 .timeline-svg {
     /* left: 1; */
@@ -223,12 +244,11 @@ p {
     opacity: 0;
     animation: appear;
     animation-timeline: view(block 50% 10%);
-    width: 70%;
+    width: 80%;
 }
 
 .thumbnail-top,
 .thumbnail {
-    font-family: Arial;
     margin-left: 5rem;
     padding-bottom: 1rem;
     /* padding: 0.5rem; */
@@ -238,14 +258,38 @@ p {
 }
 
 .thumbnail-top {
+    font-family: 'Calisto-MT';
     font-size: 12px;
     font-weight: 700;
-    /* letter-spacing: 0.02rem; */
+    letter-spacing: 0.05rem;
 }
 
 .thumbnail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, "Calisto-MT";
     padding-top: 1rem;
     font-size: 14px;
+    height: 4rem;
+    vertical-align: middle;
+}
+
+.thumbnail-integrated-link {
+    font-family: Arial, "Calisto-MT";
+    /* font-style: italic; */
+    font-size: 12px;
+    letter-spacing: 0.05rem;
+    color: #19222B;
+    /* color: gray; */
+    /* text-decoration: None; */
+    transition: 0.2s ease;
+}
+
+.thumbnail-integrated-link:hover {
+    color: pink;
+    border-bottom: 1px solid pink;
+    /* text-decoration: underline; */
 }
 
 .timeline-photos {
@@ -255,11 +299,11 @@ p {
     opacity: 0;
     animation: appear;
     animation-timeline: view(block 50% 20%);
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     width: 20%;
     min-width: 10rem;
     max-width: 13rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     background-color: whitesmoke;
 }
 
