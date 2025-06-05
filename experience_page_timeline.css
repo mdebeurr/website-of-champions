@@ -44,7 +44,7 @@ p {
 .CV-intro,
 .intro {
     /* height: 70vh; */
-    height: 30rem;
+    height: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -93,9 +93,9 @@ p {
 }
 
 .intro-title {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 100;
-    margin-top: 1rem;
+    margin-top: 4rem;
     /* margin-bottom: 1rem; */
     letter-spacing: 0.3rem;
     /* word-spacing: 0.1rem; */
@@ -195,7 +195,7 @@ p {
     }
 
     to {
-        opacity: 0;
+        opacity: 1;
     }
 }
 
@@ -232,8 +232,9 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     opacity: 0;
-    animation: appear;
-    animation-timeline: view(block 50% 10%);
+    animation: fadeIn;
+    animation-timeline: view();
+    /* animation-timeline: view(block 90% 0%); */
     width: 100%;
 }
 
@@ -242,8 +243,10 @@ p {
     flex-direction: row;
     justify-content: flex-start;
     opacity: 0;
-    animation: appear;
-    animation-timeline: view(block 50% 10%);
+    animation: fadeIn;
+    animation-timeline: view();
+    /* animation-timeline: view(block 50% 10%); */
+    /* animation-timeline: view(block 90% 0%); */
     width: 80%;
 }
 
@@ -297,8 +300,10 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     opacity: 0;
-    animation: appear;
-    animation-timeline: view(block 50% 20%);
+    /* animation: appear; */
+    animation: fadeIn;
+    animation-timeline: view();
+    /* animation-timeline: view(block 50% 10%); */
     /* padding-left: 1rem; */
     width: 20%;
     min-width: 10rem;
@@ -400,18 +405,36 @@ p {
     padding-left: 0.5rem;
 }
 
-.integrated-link {
+.integrated-link-big,
+.integrated-link-thread,
+.integrated-link-thesis,
+.integrated-link-small {
     font-family: Arial;
     /* font-style: italic; */
-    font-size: 1rem;
     color: #19222B;
-    text-decoration: None;
+    /* text-decoration: None; */
     transition: 0.2s ease;
 }
 
-.integrated-link:hover {
+.integrated-link-thread {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+}
+
+.integrated-link-thesis {
+    /* font-family: "Calisto-MT"; */
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    font-style: italic;
+}
+
+
+.integrated-link-big:hover,
+.integrated-link-thread:hover,
+.integrated-link-thesis:hover,
+.integrated-link-small:hover {
     color: pink;
-    border-bottom: 2px solid pink;
+    border-bottom: 1px solid pink;
     /* text-decoration: underline; */
 }
 
