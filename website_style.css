@@ -74,5 +74,5 @@ nav a {
 nav a:hover,
 nav a:active {
     color: pink;
-    border-bottom: 2px solid pink;
+    border-bottom: 1px solid pink;
 }

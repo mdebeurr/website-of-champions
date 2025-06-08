@@ -104,11 +104,13 @@ p {
 }
 
 .intro-title-subtext {
-    font-size: 1rem;
+    /* font-family: 'Arial Light'; */
+    font-size: 0.8rem;
     font-weight: 400;
     margin-bottom: 1rem;
-    letter-spacing: 0rem;
+    letter-spacing: 0.05rem;
     word-spacing: 0rem;
+    color: gray;
 }
 
 .intro-description,
@@ -287,6 +289,7 @@ p {
     /* color: gray; */
     /* text-decoration: None; */
     transition: 0.2s ease;
+    border-bottom: 0.3px solid gray;
 }
 
 .thumbnail-integrated-link:hover {
@@ -412,6 +415,7 @@ p {
     font-family: Arial;
     /* font-style: italic; */
     color: #19222B;
+    border-bottom: 0.3px solid gray;
     /* text-decoration: None; */
     transition: 0.2s ease;
 }
