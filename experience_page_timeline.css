@@ -143,7 +143,7 @@ p {
 
 
 .timeline-item {
-    height: 100vh;
+    height: 110vh;
     display: flex;
     border-bottom: 1px solid black;
     /* text-align: left; */
@@ -238,6 +238,7 @@ p {
     animation-timeline: view();
     /* animation-timeline: view(block 90% 0%); */
     width: 100%;
+    min-width: 50rem;
 }
 
 .timeline-content {
@@ -376,6 +377,7 @@ p {
     word-spacing: 0rem;
     /* margin-top: 1rem; */
     margin-bottom: 1rem;
+    min-width: 25rem;
     /* text-align: justify; */
     /* width: 30rem; */
     /* vertical-align: top; */
@@ -403,6 +405,7 @@ p {
     font-size: 0.75rem;
     font-weight: 400;
     width: 80%;
+    min-width: 50rem;
     margin-top: 2rem;
     border-top: 1px solid #19222B;
     padding: 0.5rem;
@@ -412,7 +415,8 @@ p {
     font-family: "Courier New";
     font-size: 0.75rem;
     font-weight: 400;
-    /* width: 50rem; */
+    width: 80%;
+    min-width: 50rem;
     /* margin-top: 1rem; */
     /* border-top: 1px solid white; */
     /* padding: 0.5rem; */
