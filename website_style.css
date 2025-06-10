@@ -76,3 +76,69 @@ nav a:active {
     color: pink;
     border-bottom: 1px solid pink;
 }
+
+.intro {
+    /* height: 70vh; */
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    font-family: 'Arial';
+    padding-right: 3rem;
+    padding-left: 3rem;
+    min-height: 30rem;
+    border-bottom: 1px solid black;
+}
+
+.intro-title {
+    font-size: 2.1rem;
+    font-weight: 100;
+    margin-top: 4rem;
+    /* margin-bottom: 1rem; */
+    letter-spacing: 0.3rem;
+    /* word-spacing: 0.1rem; */
+    font-family: "Calisto-MT";
+    /* color: gray; */
+}
+
+footer {
+    /* height: 75vh; */
+    height: 10vh;
+    min-height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-text {
+    /* display: inline-block; */
+    /* width: 20rem; */
+    /* width: 10rem; */
+    /* min-height: 3rem;
+    min-width: 15rem; */
+    /* text-align: left; */
+    padding-top: 1rem;
+    /* padding-left: 1rem; */
+    font-family: "Calisto MT", 'Monotype Corsiva';
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    color: gray;
+}
+
+.integrated-link-footer {
+    font-family: "Calisto MT", 'Monotype Corsiva';
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: gray;
+    transition: 0.2s ease;
+    /* border-bottom: 2px solid transparent; */
+}
+
+.integrated-link-footer:hover,
+.integrated-link-footer:active {
+    color: pink;
+    border-bottom: 1px solid pink;
+}
