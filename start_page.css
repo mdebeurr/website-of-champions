@@ -202,58 +202,81 @@ body {
 
 .subitem-get-in {
     /* font-family: Arial; */
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* letter-spacing: 0.1rem; */
-    margin-left: 1rem;
+    margin-left: 1.3rem;
 }
 
 .subitem-touch {
     font-family: "Arial";
-    margin-top: -2rem;
-    font-size: 5rem;
+    font-style: italic;
+    margin-top: -1.7rem;
+    font-size: 4rem;
     /* font-weight: 100; */
     letter-spacing: 0.1rem;
     color: lightgray;
+    /* border-bottom: 1px solid gray; */
 }
 
 .thumbnail-top,
-.thumbnail {
-    margin-left: 5rem;
-    padding-bottom: 1rem;
+.thumbnail,
+.thumbnail-first,
+.thumbnail-last {
+    margin-left: 3rem;
+    /* padding-bottom: 1rem; */
     /* padding: 0.5rem; */
     width: 300px;
     /* height: 10rem; */
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
+    color: gray;
 }
 
 .thumbnail-top {
     font-family: 'Calisto-MT';
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;
+    /* font-weight: 700; */
     letter-spacing: 0.05rem;
+    /* color: gray; */
+    border-bottom: 1px solid gray;
+    padding-bottom: 0.5rem;
 }
 
-.thumbnail {
+.thumbnail,
+.thumbnail-first,
+.thumbnail-last {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-family: Arial, "Calisto-MT";
-    padding-top: 1rem;
-    font-size: 14px;
-    height: 4rem;
+    /* padding-top: 1rem; */
+    /* padding-left: 1rem; */
+    font-size: 20px;
+    height: 3.5rem;
     vertical-align: middle;
+    border-right: 1px solid black;
+    /* border-left: 1px solid black; */
+}
+
+/* .thumbnail-first {
+    padding-top: 1rem;
+} */
+
+.thumbnail-last {
+    margin-bottom: 3rem;
 }
 
 .thumbnail-integrated-link {
-    font-family: Arial, "Calisto-MT";
+    font-family: "Calisto-MT";
     /* font-style: italic; */
-    font-size: 12px;
-    letter-spacing: 0.05rem;
-    color: #19222B;
-    /* color: gray; */
+    font-size: 14px;
+    letter-spacing: 0.03rem;
+    /* color: #19222B; */
+    color: gray;
     /* text-decoration: None; */
     transition: 0.2s ease;
-    border-bottom: 0.3px solid gray;
+    /* border-bottom: 0.3px solid gray; */
+    border-bottom: 1px solid transparent;
+    margin-left: 0.5rem;
 }
 
 .thumbnail-integrated-link:hover {
