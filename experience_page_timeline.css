@@ -290,8 +290,8 @@ p {
     /* font-style: italic; */
     font-size: 14px;
     letter-spacing: 0.03rem;
-    color: #19222B;
-    /* color: gray; */
+    /* color: #19222B; */
+    color: gray;
     /* text-decoration: None; */
     transition: 0.2s ease;
     border-bottom: 1px solid transparent;
@@ -305,6 +305,8 @@ p {
 }
 
 .thumbnail-phd,
+.thumbnail-helicopter1,
+.thumbnail-helicopter2,
 .thumbnail-photo-description {
     margin-left: 5rem;
     padding-bottom: 1rem;
@@ -314,6 +316,14 @@ p {
     font-size: 14px;
 }
 
+.thumbnail-helicopter1 {
+    width: 100px;
+}
+
+.thumbnail-helicopter2 {
+    width: 200px;
+    margin-left: 0;
+}
 
 .timeline-photos {
     display: flex;
